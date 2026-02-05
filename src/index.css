@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-bg text-white font-sans antialiased overflow-x-hidden;
+  }
+}
+
+/* Atmospheric Glow */
+body::before,
+body::after {
+  content: '';
+  position: fixed;
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.05;
+  filter: blur(100px);
+}
+
+/* Top-left Cyan */
+body::before {
+  top: -200px;
+  left: -200px;
+  background: radial-gradient(circle, #00F2FF 0%, transparent 70%);
+}
+
+/* Bottom-right Teal */
+body::after {
+  bottom: -200px;
+  right: -200px;
+  background: radial-gradient(circle, #20E39B 0%, transparent 70%);
+}
