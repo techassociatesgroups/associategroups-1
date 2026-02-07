@@ -41,15 +41,15 @@ function App() {
           <div>
             <h4 className="font-bold text-white text-xs tracking-widest mb-4">CONNECTION</h4>
             <ul className="space-y-2 text-gray-500 text-sm">
-              <li>contact@associatesgroups.in</li>
-              <li>+91 98404 63210</li>
-              <li>Silicon Hub, IN</li>
+              <li>info@associatesgroups.in</li>
+              <li>+91 63748 46995 </li>
+              <li>Tambaram,chennai</li>
             </ul>
           </div>
         </div>
         <div className="text-center text-gray-600 text-[10px] tracking-widest uppercase">
-          © 2024 ASSOCIATES GROUPS GLOBAL HUB. ALL SYSTEMS OPERATIONAL.
-        </div>
+  © {new Date().getFullYear()} ASSOCIATES GROUPS GLOBAL HUB. ALL SYSTEMS OPERATIONAL.
+</div>
       </footer>
     </div>
   );

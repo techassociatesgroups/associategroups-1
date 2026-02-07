@@ -6,8 +6,9 @@ const Navbar = () => {
         <nav className="fixed top-0 w-full z-50 px-6 py-4 flex justify-between items-center backdrop-blur-xl bg-bg/50 border-b border-white/5">
 
             <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-gradient-to-br from-cyan to-blue-600 rounded-lg flex items-center justify-center text-white shadow-[0_0_15px_rgba(0,242,255,0.3)]">
-                    <Grid size={20} />
+                <div>
+                    <img src="/favi.png" alt="Logo" className="w-8 h-8" />
+                    {/* <Grid size={20} /> */}
                 </div>
                 <div className="flex flex-col">
                     <span className="font-bold text-lg leading-none tracking-wide text-white">ASSOCIATES</span>
@@ -22,9 +23,12 @@ const Navbar = () => {
             </div>
 
             <div className="flex items-center gap-4">
-                <button className="hidden md:block px-6 py-2.5 bg-cyan text-bg font-bold text-sm tracking-wide rounded-full hover:shadow-[0_0_20px_rgba(0,242,255,0.4)] hover:scale-105 transition-all duration-300">
+                <a
+                   href="mailto:info@associatesgroups.in?subject=Inquiry from Website Hub"
+                    className="hidden md:block px-6 py-2.5 bg-cyan text-bg font-bold text-sm tracking-wide rounded-full hover:shadow-[0_0_20px_rgba(0,242,255,0.4)] hover:scale-105 transition-all duration-300 text-center"
+                >
                     CONNECT
-                </button>
+                </a>
                 <button className="md:hidden p-2 text-white/70 hover:text-white">
                     <Menu size={24} />
                 </button>
